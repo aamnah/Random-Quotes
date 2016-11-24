@@ -1,7 +1,9 @@
 # app
 dist/
 
+# Node stuff
 node_modules
+npm-debug.log
 
 # Unix swap files
 *.swp
