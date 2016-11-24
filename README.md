@@ -5,6 +5,6 @@ Uses React and Forismatic quotes API.
 Uses [reqwest](https://github.com/ded/reqwest) for getting data in JSONP format, which was needed because of CORS being disabled. Axios and `.fetch()` lack JSONP support.
 
 ### checklist
-[x] get a new quote on page load
-[ ] get a new quote with button click
-[ ] make it presentable
+- [x] get a new quote on page load
+- [ ] get a new quote with button click
+- [ ] make it presentable
