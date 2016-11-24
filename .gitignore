@@ -1,3 +1,7 @@
+# app
+dist/
+
 node_modules
 
+# Unix swap files
 *.swp
