@@ -23,7 +23,6 @@ class App extends React.Component {
   };
 
   fetchQuote() {
-    console.log(this.state);
     reqwest({
       url: 'http://api.forismatic.com/api/1.0/',
       method: 'get',
@@ -36,7 +35,6 @@ class App extends React.Component {
       },
     })
     .then(function(resp) {
-      console.log(this.State)
       console.log("Success! " + resp);
      // console.log(this);
       this.setState({ // this keyword has changed because this is now inside another func
@@ -51,15 +49,10 @@ class App extends React.Component {
 
 
 
-    handleClick(e) {
-      console.log(this)
-      e.preventDefault();
-      // this.setState({ // this keyword has changed because this is now inside another func
-      //   quoteText: "",
-      //   quoteCite: ""
-      // })
-      fetchQuote()
-    }
+  handleClick(e) {
+    e.preventDefault();
+    this.fetchQuote()
+  }
 
   // Les Life Cycle Hooks!
   componentDidMount() {
@@ -85,10 +78,9 @@ class App extends React.Component {
           <cite>{quoteCite}</cite>    
         </div>
         <div className="btn">
-          <button onClick={this.handleClick}><i className="fa fa-2x fa-repeat" /></button>
+          <button onClick={this.handleClick.bind(this)}><i className="fa fa-2x fa-repeat" /></button>
           <Tweet text={quoteText} cite={quoteCite}/>
         </div>
-
       </div>
     );
   }
