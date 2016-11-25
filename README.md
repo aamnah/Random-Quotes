@@ -4,7 +4,7 @@ Uses React and Forismatic quotes API.
 
 Uses [reqwest](https://github.com/ded/reqwest) for getting data in JSONP format, which was needed because of CORS being disabled. Axios and `.fetch()` lack JSONP support.
 
-![Screenshot](https://gitlab.com/qbootcamp/random-quotes-aamnah/raw/master/screenshot-random-quotes.png)
+![Screenshot](https://raw.githubusercontent.com/aamnah/Random-Quotes/master/screenshot-random-quotes.png)
 
 ### checklist
 - [x] get a new quote on page load
