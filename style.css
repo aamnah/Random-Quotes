@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant|Josefin+Sans|Sorts+Mill+Goudy|Ovo");
+body {
+  background-color: #ecf0f1;
+  font: "Ovo, serif";
+  color: #2c3e50;
+  text-align: center; }
+
+.quote {
+  width: 80%;
+  margin: 0 auto; }
+
+blockquote {
+  font-size: 3em;
+  padding: 2.5em 1em 1em 1em;
+  letter-spacing: 0.8;
+  line-height: 1.45em; }
+
+cite {
+  font-size: 2em;
+  margin-bottom: 1em; }
+
+.btn {
+  padding: 2em 1em; }
+
+button {
+  padding: 1em;
+  margin: .4em;
+  border: none;
+  background: #2c3e50;
+  color: #ecf0f1; }
+  button:hover {
+    cursor: pointer; }
+  button:focus {
+    border: none;
+    outline: none; }
+
+/*# sourceMappingURL=style.css.map */

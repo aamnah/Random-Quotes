@@ -1,5 +1,8 @@
 # app
 dist/
+.sass-cache
+*.css.map
+
 
 # Node stuff
 node_modules

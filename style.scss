@@ -1,0 +1,53 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant|Josefin+Sans|Sorts+Mill+Goudy|Ovo');
+
+$josefin: "'Josefin Sans', sans-serif";
+$goudy: "'Sorts Mill Goudy', serif";
+$cormorant: "'Cormorant Infant', serif";
+$ovo: "Ovo, serif";
+
+// COLORS
+$color-body-bg: #ecf0f1;
+$color-text: #2c3e50;
+
+body {
+  background-color: $color-body-bg;
+  font: $ovo;
+  color: $color-text;
+  text-align: center;
+}
+
+.quote {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+blockquote {
+  font-size: 3em;
+  padding: 2.5em 1em 1em 1em;
+  letter-spacing: 0.8;
+  line-height: 1.45em;
+}
+cite {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.btn {
+  padding: 2em 1em;
+}
+
+button {
+  padding: 1em;
+  margin: .4em;
+  border: none;
+  background: $color-text;
+  color: $color-body-bg; 
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
