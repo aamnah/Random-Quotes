@@ -2,6 +2,15 @@ const React = require('react');
 const ReactDOM = require('react-dom');
 const reqwest = require('reqwest');
 
+class Tweet extends React.Component {
+  // Use Web Intent. https://dev.twitter.com/web/tweet-button/parameters
+  render() {
+    return (
+      <a href={"https://twitter.com/share?url=''&text="+ this.props.text + " ~" + this.props.cite} target="_blank"><button><i className="fa fa-2x fa-twitter" /></button></a>
+    )
+  }
+}
+
 class App extends React.Component {
 
   constructor(props) {
@@ -77,9 +86,9 @@ class App extends React.Component {
         </div>
         <div className="btn">
           <button onClick={this.handleClick}><i className="fa fa-2x fa-repeat" /></button>
-          <button><i className="fa fa-2x fa-twitter" /></button>
-          {/* <a href="https://twitter.com/share" className="twitter-share-button" data-text={this.state.quoteText + " ~" + this.state.quoteCite}  data-url=" " data-show-count="false">Tweet</a> */}
+          <Tweet text={quoteText} cite={quoteCite}/>
         </div>
+
       </div>
     );
   }
