@@ -8,4 +8,4 @@ Uses [reqwest](https://github.com/ded/reqwest) for getting data in JSONP format,
 - [x] get a new quote on page load
 - [ ] get a new quote with button click
 - [ ] add a Tweet button
-- [ ] make it presentable
+- [x] make it presentable
